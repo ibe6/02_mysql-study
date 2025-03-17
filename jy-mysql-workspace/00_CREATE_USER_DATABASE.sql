@@ -50,4 +50,6 @@ SHOW GRANTS FOR 'jy'@'%'; -- 계정에 부여된 권한 확인
 CREATE DATABASE ddldb;
 GRANT ALL PRIVILEGES ON ddldb.* TO 'jy'@'%';
 
+-- FUNCTION 생성을 위해 바이너리 로깅 비활성화
+SET GLOBAL log_bin_trust_function_creators = 1;
 
